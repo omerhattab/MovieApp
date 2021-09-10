@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieApp">
+
+<head>
+   <title ng-bind="title">Movie App</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- CSS -->
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+   <!-- Google Fonts -->
+   <!-- Bootstrap Css -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <!-- Bootstrap Css -->
+   <!-- Custom Css -->
+   <link rel="stylesheet" href="assets/css/main.css">
+   <!-- Custom Css -->
+   <!-- CSS -->
+
+   <!-- JS -->
+   <!-- AngularJs 1.4.0 -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+   <!-- AngularJs 1.4.0 -->
+   <!-- Bootstrap Js -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"></script>
+   <!-- Bootstrap Js -->
+
+   <!-- Custom Js -->
+   <script src="app/app.js"></script>
+   <script src="app/controller/movies.js"></script>
+
+   <!-- Custom Js -->
+   <!-- JS -->
+</head>
+
+<body ng-controller="movieController">
+   <!-- Header -->
+   <div ng-include="'/views/partials/header/header.html'"></div>
+   <!-- Header -->
+
+   <!-- Container -->
+   <div class="container">
+      <div ng-view></div>
+   </div>
+   <!-- Container -->
+
+   <!-- Footer -->
+   <div ng-include="'/views/partials/footer/footer.html'"></div>
+   <!-- Footer -->
+
+</body>
+
+</html>
