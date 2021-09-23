@@ -44,6 +44,20 @@
 
    <!-- Container -->
    <div class="container">
+      <div ng-controller="moviesController">
+         <div class="text-center text-light m-5" ng-show="loading">
+            <div class="spinner-grow" role="status">
+               <span class="sr-only">Loading...</span>
+             </div>
+             <div>Loading...</div>
+         </div>
+         <div class="alert alert-danger mb-5" role="alert" ng-show="errorAlert">
+            <h4 class="alert-heading">Error ! 404 Not Found</h4>
+            <p>Something went wrong. We did not find the page you were looking for. Please try again later.</p>
+            <hr>
+            <a href="#index.html#/" class="btn btn-light">Go Home ></a>
+          </div>
+      </div>
       <div ng-view></div>
    </div>
    <!-- Container -->
